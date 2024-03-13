@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+        /* Add some space below the header */
+        #about h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Add space between the picture and the text */
+        .section-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Style the text container */
+        .text-container {
+            max-width: 600px; /* Adjust the max-width as needed */
+        }
+    </style>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Rayhan Mohammed</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Rayhan Mohammed</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./profile-pic-rayhan1.png" alt="Rayhan Profile Pic">
+        </div>
+        <div class="section__text">
+            <h1 class="title">Rayhan Mohammed</h1>
+            <p class="section__text__p2">CS and Math Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./rayhan-resume.pdf')">
+                    Download Resume
+                </button>
+                <button class="btn btn-color-2" onclick="location.href='mailto:rayhan.mohammed15@gmail.com'">
+                    Email Me
+                </button>
+                
+                
+            </div>
+            <div id="socials-container">
+                <img src="./linkedin.png" alt="My LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/rayhan-mohammed-80b301254'" />
+                <img src="./github.png" alt="My Github" class="icon" onclick="location.href='https://github.com/RayM2'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./rayhan-about-pic.png" alt="profile picture" class="about-pic">
+            </div>
+            <div class = "details-container">
+            <div class="text-container">
+                <p>Hi! I'm Rayhan Mohammed, a second-year double major in Computer Science and Applied Mathematics at the New Jersey Institute of Technology's Albert Dorman Honors College. I grew up in Brooklyn, NY, and I have recently moved to Parlin, NJ where I live now. My passion for both Computer Science and Math, as well as my drive to push myself, led me to my double major, and I look forward to finding new ways to challenge myself in both fields. In my free time, I enjoy exploring new places, playing video games, staying active, reading, and learning new things.</p>
+            </div>
+        </div>
+        </div>
+        <img src="./arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+    </section>
+    <section id="experience">
+        <h1 class="title">Experience</h1>
+        <div class="experience-container">
+            <!-- Academic Experience Box -->
+            <div class="experience-box">
+                <h2>Academic Experience</h2>
+                <p>Double Major, Computer Science and Applied Mathematics</p>
+                <p>Albert Dorman Honors College, New Jersey Institute of Technology</p>
+            </div>
+            
+            <!-- Research Experience Box -->
+            <div class="experience-box">
+                <h2>Research Experience</h2>
+                <p>Research Assistant, NJIT Visual Perception Lab</p>
+                <p>Studying the Peripheral Vision Ability of Prolific Video Gamers</p>
+                <p>Involved In: Running Experimental Equipment and Code, Data Analysis, Literature Reviews</p>
+            </div>
+        </div>
+        <img src="./arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+    </section>
+    <section id = "projects">
+        <p class = "section__text__p1">Check Out My</p>
+        <h1 class = "title"> Projects </h1>
+        <div class = "project-container">
+        <div class = "details-container-color-container">
+        <div class = "article-container">
+            <h2 class="sub-heading">To-Do List</h2>
+        <img src="./project-1.png" alt="project 1" 
+        class = "project-img"/>
+    </div>
+    
+    <div class = "btn-container">
+        <button class = "btn btn-color-2 project-btn" onclick=
+        "location.href='https://github.com/RayM2/to-do-list'">
+        Github
+    </button>
+    </div>
+    </div>
+    <div class = "details-container-color-container">
+        <div class = "article-container">
+            <h2 class="sub-heading">OpenAI Budget Advisor</h2>
+        <img src="./project-2.png" alt="project 1" 
+        class = "project-img"/>
+    </div>
+    
+    <div class = "btn-container">
+        <button class = "btn btn-color-2 project-btn" onclick=
+        "location.href='https://github.com/RayM2/aifinancereader'">
+        Github
+    </button>
+    </div>
+    </div>
+    <div class = "details-container-color-container">
+        <div class = "article-container">
+            <h2 class="sub-heading">NJIT CS280 Projects</h2>
+        <img src="./project-3.png" alt="project 3" 
+        class = "project-img"/>
+    </div>
+    
+    <div class = "btn-container-last">
+        <button class = "btn btn-color-2 project-btn" onclick=
+        "location.href='https://github.com/RayM2/CS280'">
+        Github
+    </button>
+    </div>
+    </div>
+    </div>
+    </section>
+    <footer>
+        <nav>
+        </nav>
+        <p class = "foot-description">Copyright &#169</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
